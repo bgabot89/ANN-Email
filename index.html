@@ -78,9 +78,70 @@
       line-height: 20px;
 	  }
 
-    .padding-10 {
-      margin: 0px;
-    }
+    @media screen and (max-width: 600px) { 
+		.two-columns .column {
+			width: 550px!important;
+			max-width: 550px!important;
+		}
+
+    .two-columns img {
+			width: 550px!important;
+			max-width: 550px!important;
+		}
+
+		.padding {
+			padding-right: 0!important;
+			padding-left: 0!important;
+		}
+	}
+
+  @media screen and (max-width: 450px) { 
+		.two-columns .column {
+			width: 450px!important;
+			max-width: 450px!important;
+		}
+
+    .two-columns img {
+			width: 450px!important;
+			max-width: 450px!important;
+		}
+
+		.padding {
+			padding-right: 0!important;
+			padding-left: 0!important;
+		}
+	}
+
+  .two-tiles .column {
+    width: 100%; 
+    max-width: 300px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  @media screen and (max-width: 600px) { 
+		.two-tiles .column {
+			width: 450px!important;
+			max-width: 450px!important;
+		}
+
+    .two-tiles img {
+			width: 450px!important;
+			max-width: 450px!important;
+		}
+	}
+
+  @media screen and (max-width: 450px) { 
+		.two-tiles .column {
+			width: 350px!important;
+			max-width: 350px!important;
+		}
+
+    .two-tiles img {
+			width: 350px!important;
+			max-width: 350px!important;
+		}
+	}
 
   </style>
 </head>
@@ -147,7 +208,7 @@
                     <td class="padding-none">
                       <table class="content">
                           <td>
-                            <img src="https://i.postimg.cc/JnZjz5RV/bleach-thousand-poster-tile.png" alt="bleach-thousand-poster" style="display: block; margin: 0px auto; width: 300px;" width="300"> <!--450x500-->
+                            <img src="https://i.postimg.cc/JnZjz5RV/bleach-thousand-poster-tile.png" alt="bleach-thousand-poster" style="display: block; margin: 0px auto;" width="300"> <!--450x500-->
                         </td>
                       </table>
                     </td>
@@ -271,7 +332,7 @@
           <td>
             <table width="100%" cellspacing="0" cellpadding="0" border="0">
               <tr>
-                <td class="two-columns" style="padding-top: 20px">
+                <td class="two-tiles" style="padding-top: 20px">
                     <table class="column"
                     cellspacing="0" cellpadding="0" border="0" align="left">
                       <tr>
@@ -313,7 +374,7 @@
             <td>
               <table width="100%" cellspacing="0" cellpadding="0" border="0">
                 <tr>
-                  <td class="two-columns" style="padding-top: 20px">
+                  <td class="two-tiles" style="padding-top: 20px">
                       <table class="column"
                       cellspacing="0" cellpadding="0" border="0" align="left">
                         <tr>
